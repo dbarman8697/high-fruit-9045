@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Footer from '../footer/Footer'
 import Cart from '../pages/Cart'
 import Discount from '../pages/Discount'
 import Home from '../pages/Home'
@@ -18,6 +19,7 @@ const AllRoutes = () => {
             <Route path='cart' element={<Cart/>}/>
             <Route path='wishlist' element={<Wishlist/>}/>
         </Routes>
+        <Footer/>
     </div>
   )
 }

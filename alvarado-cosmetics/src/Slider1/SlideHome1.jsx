@@ -3,7 +3,7 @@ import { ShowData } from "../Carddiscreption/ShowData";
 import { ShowDataHome } from "../Carddiscreption/ShowDataHome";
 // import styles from './Delivery.module.css'
 import styles from "../pages/Styles/Default.module.css";
-function Delivery() {
+function SlideHome1() {
   const [data, setData] = useState([]);
   const [count, setCount] = useState(0);
   const [newData, setNewData] = useState([]);
@@ -11,7 +11,7 @@ function Delivery() {
   useEffect(() => {
     let getData = async () => {
       try {
-        let res = await fetch("http://localhost:3008/products");
+        let res = await fetch("http://localhost:3009/products1");
         let info = await res.json();
         console.log(info);
         setData([...info]);
@@ -99,7 +99,7 @@ function Delivery() {
             <img src="https://in.sugarcosmetics.com/less-than.png" alt="left" />
           </div>
         </div>
-        <div style={{ width: "80%", margin:"auto" }}>
+        <div style={{ width: "80%" }}>
           <div id={styles.contain}>
             {newData.map((item, index) => {
               return <ShowDataHome {...item} />;
@@ -107,7 +107,7 @@ function Delivery() {
           </div>
         </div>
         <div style={{ width: "10%" }}>
-          <div id="right" onClick={handleRight} style={{ marginTop: "170px" }}>
+          <div id="right" onClick={handleRight} style={{ marginTop: "170px"}}>
             <img
               src="https://in.sugarcosmetics.com/greater-than.png "
               alt="right"
@@ -121,5 +121,5 @@ function Delivery() {
   );
 }
 
-export default Delivery;
+export default SlideHome1;
 

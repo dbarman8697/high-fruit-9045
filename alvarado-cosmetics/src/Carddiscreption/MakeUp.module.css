@@ -18,8 +18,10 @@
 .whislisticon
 {
     height: 30px;
-    width: 50px;
+    width: 45px;
     margin-left: 5px;
+    /* border: 1px solid black; */
+
 }
 #btn{
     justify-content: right;
