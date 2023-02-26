@@ -1,15 +1,15 @@
+
 import './App.css';
-import React from "react";
-import AllRoutes from './components/AllRoutes';
-import Navbar from './components/Navbar';
-
-
+import AllPages from './Components/AllPages';
+import Footer from './Components/Footer/Footer';
+import NavigationMain from './Components/Navbar/NavigationMain';
 function App() {
+  
   return (
-    <div className="App">
-      <Navbar/>
-     <AllRoutes/>
-     
+    <div className="App" >
+      <NavigationMain/>
+     <AllPages/>
+     <Footer/>
     </div>
   );
 }
